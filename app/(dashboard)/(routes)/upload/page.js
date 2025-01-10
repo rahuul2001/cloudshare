@@ -77,7 +77,7 @@ function Upload() {
         userEmail: user?.primaryEmailAddress?.emailAddress || "unknown",
         userName: user?.fullName || "unknown",
         password: "",
-        shortUrl: `${process.env.NEXT_PUBLIC_BASE_URL}${generatedFileDocId}`,
+        shortUrl: 'https://cloudshare-xi.vercel.app/'+generatedFileDocId,
       });
       console.log("File info saved to Firestore");
       setFileDocId(generatedFileDocId);
